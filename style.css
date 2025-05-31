@@ -12,7 +12,7 @@ body {
 
 /* Header and Banner */
 header {
-    background: url('https://via.placeholder.com/2000x250/003087/FFD700?text=Hosana+High+School') no-repeat center center/cover;
+    background: url('uploads/hosana_01.jpg') no-repeat center center/cover;
     height: 250px;
     color: #fff;
     text-align: center;
@@ -80,6 +80,43 @@ nav ul li a:hover {
     font-size: 16px;
     color: #333;
 }
+
+
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+
+
+
+
+
 
 /* Footer */
 footer {
