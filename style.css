@@ -139,6 +139,64 @@ footer {
     width: 100%;
 }
 
+
+.table-container {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto; /* Ensures table is scrollable on small screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners apply to table */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #003087; /* School color: blue */
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+td {
+    font-size: 14px;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* Hover effect for rows */
+    transition: background-color 0.3s ease;
+}
+
+tr:last-child td {
+    border-bottom: none; /* Remove border for the last row */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    th, td {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    th {
+        font-size: 14px;
+    }
+}
+
+
+
 footer p {
     margin: 5px 0;
 }
